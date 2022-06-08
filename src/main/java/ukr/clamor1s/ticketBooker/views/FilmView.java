@@ -8,7 +8,7 @@ public class FilmView {
 		return "{\n"
 				+ String.format("\t\"name\": \"%s\",\n", film.getName())
 				+ String.format("\t\"genre\": \"%s\",\n", film.getGenre())
-				+ String.format("\t\"duration\": \"%d\"\n", film.getDuration())
+				+ String.format("\t\"duration\": %d\n", film.getDuration())
 				+ "}";
 	}
 	

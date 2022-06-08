@@ -6,8 +6,8 @@ public class CinemaView {
 
 	public static String convertToJson(CinemaModel cinema) {
 		return "{\n"
-				+ String.format("\t\"cinemaRooms\": \"%s\",\n", RoomView.convertArrayToJson(cinema.getCinemaRooms()))
-				+ String.format("\t\"timeTable\": \"%s\"\n", "null")
+				+ String.format("\t\"cinemaRooms\": %s,\n", RoomView.convertArrayToJson(cinema.getCinemaRooms()))
+				+ String.format("\t\"timeTable\": %s\n", null)
 				+ "}";
 	}
 	

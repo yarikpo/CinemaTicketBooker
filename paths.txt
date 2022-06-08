@@ -1,0 +1,6 @@
+/cinema/ -> all rooms (CinemaController)
+/cinema/{:roomName} -> room info + places (RoomController)
+/cinema/{:roomName}/{:placeNumber} -> place info (PlaceController)
+/cinema/{:roomName}/film -> film info (FilmController)
+
+

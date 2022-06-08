@@ -6,6 +6,14 @@ public class Film {
 	private String genre;
 	private int duration;
 	
+	public Film() {}
+	
+	public Film(String name, String genre, int duration) {
+		this.name = name;
+		this.genre = genre;
+		this.duration = duration;
+	}
+	
 	public String getName() {
 		return this.name;
 	}

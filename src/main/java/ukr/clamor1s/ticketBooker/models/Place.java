@@ -6,6 +6,14 @@ public class Place {
 	private long cost;
 	private boolean taken;
 	
+	public Place() {}
+	
+	public Place(int number, long cost, boolean taken) {
+		this.number = number;
+		this.cost = cost;
+		this.taken = taken;
+	}
+	
 	public int getNumber() {
 		return this.number;
 	}
