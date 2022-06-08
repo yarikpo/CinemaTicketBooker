@@ -1,6 +1,6 @@
-package ukr.clamor1s.views;
+package ukr.clamor1s.ticketBooker.views;
 
-import ukr.clamor1s.models.CinemaModel;
+import ukr.clamor1s.ticketBooker.models.CinemaModel;
 
 public class CinemaView {
 

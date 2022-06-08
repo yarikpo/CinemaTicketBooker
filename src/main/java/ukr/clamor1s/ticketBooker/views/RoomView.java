@@ -1,8 +1,8 @@
-package ukr.clamor1s.views;
+package ukr.clamor1s.ticketBooker.views;
 
 import java.util.List;
 
-import ukr.clamor1s.models.Room;
+import ukr.clamor1s.ticketBooker.models.Room;
 
 public class RoomView {
 

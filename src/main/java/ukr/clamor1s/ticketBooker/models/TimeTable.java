@@ -1,4 +1,4 @@
-package ukr.clamor1s.models;
+package ukr.clamor1s.ticketBooker.models;
 
 import java.util.List;
 

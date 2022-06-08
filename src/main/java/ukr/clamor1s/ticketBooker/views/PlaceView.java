@@ -1,8 +1,8 @@
-package ukr.clamor1s.views;
+package ukr.clamor1s.ticketBooker.views;
 
 import java.util.List;
 
-import ukr.clamor1s.models.Place;
+import ukr.clamor1s.ticketBooker.models.Place;
 
 public class PlaceView {
 
