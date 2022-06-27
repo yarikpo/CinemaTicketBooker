@@ -20,19 +20,19 @@ public class CinemaController {
 		
 		CinemaModel cinema = new CinemaModel();
 		
-		Room room1 = new Room("Blue room", 13);
-		room1.addPlace(new Place(1, 10L, false));
-		room1.addPlace(new Place(2, 10L, false));
-		room1.addPlace(new Place(3, 20L, true));
-		room1.setFilmExecuted(new Film("Saw III", "Horror", 3600));
+		Room room1 = new Room(1, "Blue room", 13);
+		room1.addPlace(new Place(1, 1, 10L, false));
+		room1.addPlace(new Place(2, 2, 10L, false));
+		room1.addPlace(new Place(3, 3, 20L, true));
+		room1.setFilmExecuted(new Film(1, "Saw III", "Horror", 3600));
 		cinema.addRoom(room1);
 		
-		Room room2 = new Room("Red room", 26);
-		room2.addPlace(new Place(1, 10L, false));
-		room2.addPlace(new Place(2, 10L, false));
-		room2.addPlace(new Place(3, 20L, true));
-		room2.addPlace(new Place(4, 40L, true));
-		room2.setFilmExecuted(new Film("Jango's Redemption", "Western", 7200));
+		Room room2 = new Room(2, "Red room", 26);
+		room2.addPlace(new Place(4, 1, 10L, false));
+		room2.addPlace(new Place(5, 2, 10L, false));
+		room2.addPlace(new Place(6, 3, 20L, true));
+		room2.addPlace(new Place(7, 4, 40L, true));
+		room2.setFilmExecuted(new Film(2, "Jango's Redemption", "Western", 7200));
 		cinema.addRoom(room2);
 		
 		String result = CinemaView.convertToJson(cinema);

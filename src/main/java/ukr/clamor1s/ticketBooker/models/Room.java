@@ -5,6 +5,7 @@ import java.util.List;
 
 public class Room {
 
+	private long id;
 	private String roomName;
 	private int roomSize;
 	private Film filmExecuted;
@@ -12,7 +13,8 @@ public class Room {
 	
 	public Room() {}
 	
-	public Room(String roomName, int roomSize) {
+	public Room(long id, String roomName, int roomSize) {
+		this.id = id;
 		this.roomName = roomName;
 		this.roomSize = roomSize;
 	}
@@ -39,6 +41,14 @@ public class Room {
 	
 	public List<Place> getPlaces() {
 		return new ArrayList<>(this.places);
+	}
+	
+	public long getId() {
+		return this.id;
+	}
+	
+	public void setId(long id) {
+		this.id = id;
 	}
 	
 }

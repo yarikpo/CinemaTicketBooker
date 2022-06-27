@@ -18,11 +18,11 @@ public class RoomController {
 			produces = MediaType.APPLICATION_JSON_VALUE)
 	public String getRoom(@PathVariable String roomName) {
 		
-		Room room1 = new Room("Blue room", 13);
-		room1.addPlace(new Place(1, 10L, false));
-		room1.addPlace(new Place(2, 10L, false));
-		room1.addPlace(new Place(3, 20L, true));
-		room1.setFilmExecuted(new Film("Saw III", "Horror", 3600));
+		Room room1 = new Room(1, "Blue room", 13);
+		room1.addPlace(new Place(1, 1, 10L, false));
+		room1.addPlace(new Place(2, 2, 10L, false));
+		room1.addPlace(new Place(3, 3, 20L, true));
+		room1.setFilmExecuted(new Film(1, "Saw III", "Horror", 3600));
 		
 		String result = RoomView.convertToJson(room1);
 		

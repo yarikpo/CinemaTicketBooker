@@ -17,7 +17,7 @@ public class PlaceController {
 	public String getPlace(@PathVariable("roomName") String roomName,
 							@PathVariable("placeNumber") int placeNumber) {
 		
-		Place place = new Place(4, 55L, false);
+		Place place = new Place(1, 4, 55L, false);
 		String result = PlaceView.convertToJson(place);
 		
 		System.out.println(roomName);

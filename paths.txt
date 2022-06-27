@@ -2,5 +2,10 @@
 /cinema/{:roomName} -> room info + places (RoomController)
 /cinema/{:roomName}/{:placeNumber} -> place info (PlaceController)
 /cinema/{:roomName}/film -> film info (FilmController)
+GET /cinema/films/{:id} -> get film by id
+POST /cinema/films?name=a&genre=b&duration=3 -> create film with unique id
+GET /cinema/films -> get all films
+PUT /cinema/films/{:id}?name=a&genre=b&duration=3 -> get film by id
+DELETE /cinema/films/{:id} -> delete film by id
 
 

@@ -8,6 +8,7 @@ public class PlaceView {
 
 	public static String convertToJson(Place place) {
 		return "{\n"
+				+ String.format("\t\"id\": %d,\n", place.getId())
 				+ String.format("\t\"number\": %d,\n", place.getNumber())
 				+ String.format("\t\"taken\": %b,\n", place.getTaken())
 				+ String.format("\t\"cost\": %d\n", place.getCost())
